@@ -1,0 +1,13 @@
+﻿<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#123d29"><title>Jungle Words · Крестики-нолики</title><link rel="stylesheet" href="styles.css"><script src="game.js" defer></script></head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<main class="layout">
+<header class="intro"><div class="eyebrow">Английский · играй и учись</div><h1>Jungle<br><span>Words</span></h1><p class="tagline">Маленькие слова.<br>Большое приключение!</p><div class="player-card"><span>Твоя фишка</span><img id="player-token" src="cross.png" alt="Крестик"><strong id="player-label">Выберем перед игрой</strong></div><div class="counters"><div><strong id="moves">0</strong><span>попыток</span></div><div><strong id="errors">0</strong><span>ошибок</span></div></div><p id="status" role="status" aria-live="polite">Обезьянка приглашает тебя играть!</p><nav><button id="restart" class="small">Новая игра</button><button id="help" class="small">Инструкция</button><button id="sound" class="small" aria-pressed="false">♫ Звук вкл.</button></nav><div class="leaf-note">Собери слово. Поставь фишку.<br>Выстрой три в ряд!</div></header>
+<section class="board-wrap" aria-label="Игровая доска"><img class="desk" src="desk.png" alt="Доска для крестиков-ноликов в джунглях с обезьянкой и туканом"><div id="board" class="board" aria-label="Клетки поля"></div></section>
+</main>
+<div id="overlay" class="overlay"><section id="dialog" class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" tabindex="-1"></section></div>
+<div id="confetti" aria-hidden="true"></div>
+<footer>JUNGLE WORDS <span>✦</span> Собирай слова — покоряй джунгли</footer>
+</body></html>
